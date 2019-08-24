@@ -36,5 +36,17 @@
     <ClCompile Include="2019 RoundA-A-Training.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="2019 RoundB-B-Energy Stones.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="2019 RoundB-B-Energy Stones1.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="2019 RoundC-A-Wiggle Walk%28cankao%29.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="2019 RoundC-A-Wiggle Walk.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
