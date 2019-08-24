@@ -4,7 +4,9 @@
 #include<utility>
 using namespace std;
 
-int const N = 5e4 + 5;
+//int const N = 5e4 + 5; 
+// const的位置与类型声明的位置可以互换无影响，但涉及到指针时，const在*的右侧则是修饰指针，在*的左侧则是修饰指针指向的变量
+const int N = 5e4 + 5;
 set<pair<int, int>> Segr[N], Segc[N];
 char s[N];
 
@@ -51,7 +53,7 @@ void solve(int iCase) {
 	cin >> s;
 	s[Ni] = 0; // 设定字符串结尾标志，不然会出错
 
-	// 初始化set集合
+	// 初始化set集合，注意是从1开始
 	for (int i = 1; i <= R; i++) {
 		Segr[i].clear();
 		Segr[i].insert(make_pair(1, C));
@@ -68,48 +70,57 @@ void solve(int iCase) {
 	for (int k = 0; k < Ni; k++) {
 		char struc = s[k];
 
-		if (struc == 'N') {
-			auto it = Segc[Sc].lower_bound(make_pair(Sr + 1, -1));
-			if (it != Segc[Sc].begin()) // 注意此处判断一定不能写错，不然会导致死循环，TLE
-				it--;
-			Sr = it->second;
-		}
-		else if (struc == 'S') {
-			auto it = Segc[Sc].lower_bound(make_pair(Sr + 1, -1));
-			Sr = it->first;
-		}
-		else if (struc == 'W') {
-			auto it = Segr[Sr].lower_bound(make_pair(Sc + 1, -1));
-			if (it != Segr[Sr].begin())
-				it--;
-			Sc = it->second;
-		}
-		else {
-			auto it = Segr[Sr].lower_bound(make_pair(Sc + 1, -1));
-			Sc = it->first;
-		}
-		/*switch (struc) {
+		//if (struc == 'N') {
+		//	auto it = Segc[Sc].lower_bound(make_pair(Sr + 1, -1));
+		//	if (it != Segc[Sc].begin()) // 注意此处判断一定不能写错，不然会导致死循环，TLE
+		//		it--;
+		//	Sr = it->second;
+		//}
+		//else if (struc == 'S') {
+		//	auto it = Segc[Sc].lower_bound(make_pair(Sr + 1, -1));
+		//	Sr = it->first;
+		//}
+		//else if (struc == 'W') {
+		//	auto it = Segr[Sr].lower_bound(make_pair(Sc + 1, -1));
+		//	if (it != Segr[Sr].begin())
+		//		it--;
+		//	Sc = it->second;
+		//}
+		//else {
+		//	auto it = Segr[Sr].lower_bound(make_pair(Sc + 1, -1));
+		//	Sc = it->first;
+		//}
+
+		switch (struc) {
 		case 'N':
+		{
 			auto it = Segc[Sc].lower_bound(make_pair(Sr + 1, -1));
-			if (it != Segc[Sc].end())
+			if (it != Segc[Sc].begin())
 				it--;
 			Sr = it->second;
 			break;
+		}
 		case 'S':
+		{
 			auto it = Segc[Sc].lower_bound(make_pair(Sr + 1, -1));
 			Sr = it->first;
 			break;
+		}
 		case 'W':
+		{
 			auto it = Segr[Sr].lower_bound(make_pair(Sc + 1, -1));
 			if (it != Segr[Sr].begin())
 				it--;
 			Sc = it->second;
 			break;
+		}
 		case 'E':
+		{
 			auto it = Segr[Sr].lower_bound(make_pair(Sc + 1, -1));
 			Sc = it->first;
 			break;
-		}*/
+		}
+		}
 
 		remove(Sr, Sc);
 	}
