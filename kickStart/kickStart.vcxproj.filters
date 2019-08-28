@@ -48,5 +48,17 @@
     <ClCompile Include="2019 RoundC-A-Wiggle Walk.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="2019 RoundD-A-X or What.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="2019 RoundD-B-Latest Guests.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="2019 RoundE-A-Cherries Mesh.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="2019 RoundE-B-Code-Eat Switcher.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
