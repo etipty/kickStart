@@ -36,5 +36,11 @@
     <ClCompile Include="DP-10.Regular Expression Matching.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="DP-139.Word Break.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DP-140.Word Break II.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
