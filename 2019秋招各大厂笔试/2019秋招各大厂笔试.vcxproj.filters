@@ -57,5 +57,11 @@
     <ClCompile Include="..\专题练习\2019-09-11华为2.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="..\专题练习\2019-09-20腾讯2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\专题练习\2019-09-20腾讯4.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

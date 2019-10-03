@@ -42,5 +42,29 @@
     <ClCompile Include="DP-140.Word Break II.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="2019-09-20腾讯3p.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="2019-09-20腾讯5.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="网易前端.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="网易前端4.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="快手1.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="快手2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="快手3.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="快手4.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

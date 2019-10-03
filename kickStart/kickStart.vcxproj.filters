@@ -60,5 +60,11 @@
     <ClCompile Include="2019 RoundE-B-Code-Eat Switcher.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="2019 RoundF-A.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="2019 RoundF-B.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
